@@ -1,0 +1,247 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/Cairo-Regular.ttf);
+}
+body {
+  font-family: "myFirstFont", Times, serif;
+  direction: rtl;
+}
+header {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 840px;
+  background-color: #000;
+}
+header .brand {
+  padding-top: 100px;
+  margin-bottom: 60px;
+  display: inline-block;
+}
+header .brand img {
+  margin: auto;
+}
+header .brand .logo {
+  margin-bottom: 13px;
+  margin-right: 30px;
+}
+header .brand .slogn {
+  padding-bottom: 30px;
+  border-bottom: 5px solid #464b52;
+}
+header .title h4 {
+  color: #fff;
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+header .title p {
+  color: #acacac;
+  font-size: 18px;
+  width: 32%;
+  margin: auto;
+}
+.countdown-section {
+  font-size: 60px;
+  width: 100px !important;
+}
+
+.countdown-section .countdown-amount {
+  color: #ffce00;
+  font-size: 60px;
+  font-weight: bold;
+}
+.countdown-section .countdown-period {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.is-countdown {
+  border: 0px !important;
+  background: none !important;
+}
+
+/* .form-inline {
+  top: 113%;
+  right: 29%;
+  position: absolute;
+} */
+header .send-notification {
+  margin-top: 220px;
+}
+header .send-notification p {
+  font-size: 18px;
+  color: #fff;
+}
+.form-inline {
+  direction: ltr;
+  align-items: center;
+  justify-content: center;
+}
+.form-inline button {
+  background-color: #ffce00;
+  padding: 13px 30px;
+  border-radius: 0%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+header .send-notification p {
+  font-size: 18px;
+  color: #fff;
+}
+.form-group {
+  width: 30%;
+}
+.form-inline input {
+  padding: 32px !important;
+  color: #c7c7c7;
+  font-size: 18px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 200%;
+}
+.input-group {
+  width: 100% !important;
+}
+.input-group .alert {
+  display: none;
+  position: absolute;
+  top: 110%;
+  right: 0;
+  left: 0;
+}
+#GameFeatures {
+  padding-top: 140px;
+}
+#GameFeatures h2 {
+  font-size: 45px;
+  color: #555;
+  padding-bottom: 100px;
+  text-align: right;
+}
+.card {
+  border: 4px solid #fafafa;
+  padding: 40px 10px;
+  margin-bottom: 20px;
+  max-height: 190px;
+}
+.card .card-title {
+  font-size: 24px;
+  color: #555;
+}
+.card .card-text {
+  font-size: 15px;
+  color: #a1a1a1;
+}
+#GameFeatures .row .col-md-6:nth-child(even) {
+  text-align: left;
+}
+footer {
+  background: url(../img/footer-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+footer .top-footer .overlay {
+  background-color: rgba(255, 204, 0, 0.7);
+  padding: 60px 0;
+}
+footer .top-footer .overlay h3 {
+  font-size: 30px;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+footer .form-inline button {
+  background-color: #393939;
+}
+
+footer .contact .overlay {
+  background-color: rgba(28, 28, 28, 0.7);
+  padding: 60px 0 10px;
+  color: #fff;
+}
+footer .contact .overlay h3 {
+  font-size: 30px;
+  margin: 0 auto 30px;
+}
+footer .contact .overlay ul li a {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+footer .contact .overlay ul li {
+  margin: 0 5px 10px;
+}
+footer .contact .overlay ul li a.facebook:hover {
+  background-color: #3b5999;
+}
+footer .contact .overlay ul li a.twitter:hover {
+  background-color: #55acee;
+}
+footer .contact .overlay ul li a.linkedin:hover {
+  background-color: #0077b5;
+}
+footer .contact .overlay ul li a.instagram:hover {
+  background-color: #e4405f;
+}
+footer .contact .overlay hr {
+  width: 25%;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  margin-top: 50px;
+}
+footer .contact .overlay p a {
+  color: #b4b4b4;
+}
+footer .contact .overlay p a i {
+  color: #ffce00;
+  margin-left: 5px;
+}
+footer .contact .overlay ul li a {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media (max-width: 2560px) {
+  #defaultCountdown {
+    margin-left: 36%;
+  }
+}
+@media (max-width: 1440px) {
+  #defaultCountdown {
+    margin-left: 30%;
+  }
+}
+@media (max-width: 1024px) {
+  #defaultCountdown {
+    margin-left: 21%;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    height: 770px;
+  }
+  .countdown-section {
+    width: 53px !important;
+  }
+  #defaultCountdown {
+    margin-left: 19%;
+  }
+  .countdown-section .countdown-amount {
+    font-size: 40px;
+  }
+  .countdown-section .countdown-period {
+    font-size: 17px;
+  }
+  header .send-notification {
+    margin-top: 125px;
+  }
+  header .title p {
+    width: 50%;
+  }
+  header .title h4 {
+    font-size: 35px;
+  }
+  .form-group {
+    width: 97%;
+  }
+}

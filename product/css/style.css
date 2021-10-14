@@ -1,0 +1,397 @@
+@font-face {
+  font-family: AR-font;
+  src: url(../fonts/Cairo-Regular.ttf);
+}
+body {
+  font-family: AR-font, "Courier New", Courier, monospace;
+  direction: rtl;
+}
+header {
+  text-align: right;
+}
+header video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -10;
+}
+header .overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -4;
+}
+header .header-text h3 {
+  font-size: 36px;
+  color: #555;
+  padding-top: 200px;
+  padding-bottom: 40px;
+}
+header .header-text p {
+  font-size: 18px;
+  color: #5d5d5d;
+  padding-bottom: 50px;
+}
+header .header-text button {
+  font-size: 18px;
+  border: 0px;
+  padding: 25px 55px;
+  margin-left: 5px;
+}
+header .header-text button:first-child {
+  color: #fff;
+  background-color: #7936b2;
+}
+header .header-text button:last-child {
+  color: #7936b2;
+  background-color: transparent;
+  transition: 0.5s;
+}
+header .header-text button:last-child:hover {
+  color: #fff;
+  background-color: #7936b2;
+}
+header .header-text .buts {
+  margin-bottom: 100px;
+}
+header .product-img {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+header .product-img img.label {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+header .product-img p {
+  position: absolute;
+  top: -30px;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+}
+header .product-img p span {
+  display: block;
+  font-weight: bold;
+}
+.Features,
+.Prices {
+  background-color: #fff;
+  padding: 40px;
+}
+.Features .text-center h3 {
+  font-size: 36px;
+  color: #555;
+  line-height: 120px;
+}
+.Features .text-center::after {
+  content: " ";
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #6a3093;
+}
+.Features .card {
+  border: 0;
+}
+.Features .feature {
+  padding: 90px 0;
+}
+.Features .card .img-wrapper {
+  margin-left: 170px;
+}
+.Features .card-body h4 {
+  font-size: 36px;
+  color: #6a3093;
+  padding-right: 25px;
+  border-right: 2px solid #6a3093;
+  margin: 50px 0;
+}
+.Features .card-body p {
+  font-size: 18px;
+  color: #555;
+}
+.Features .feature:nth-child(even) {
+  text-align: left;
+}
+.Features .feature:nth-child(even) h4 {
+  border-right: 0;
+  border-left: 2px solid #6a3093;
+  padding-left: 25px;
+}
+.Features .feature:nth-child(even) .card .img-wrapper {
+  margin-left: 0;
+  margin-right: 170px;
+}
+.Prices {
+  background-color: #f7f7f7;
+}
+.Prices .title h3 {
+  font-size: 30px;
+  color: #555;
+  padding-bottom: 130px;
+}
+.Prices .plan {
+  border: 2px solid #ededed;
+  background-color: #fff;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+.Prices .plan p {
+  font-size: 18px;
+  color: #a044ff;
+  padding-bottom: 30px;
+}
+.Prices .plan ul {
+  padding: 0;
+}
+.Prices .plan h3 {
+  color: #a9a9ab;
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+.Prices .plan span {
+  font-size: 15px;
+  vertical-align: bottom;
+}
+.Prices .plan ul li {
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 30px;
+  color: #acacac;
+  font-size: 15px;
+}
+.Prices .plan button {
+  color: #a044ff;
+  padding: 10px 40px;
+  border: 2px solid#a044ff;
+  border-radius: 0;
+}
+.Prices .plan.pr {
+  padding-top: 60px !important;
+  margin-top: 0;
+}
+.Prices .plan.pr button {
+  color: #fff;
+  background-color: #a044ff;
+}
+/***************************************************
+************************************************
+****************************************************
+FAQ
+***************************************************
+************************************************
+****************************************************/
+.faq {
+  background-color: #fff;
+  padding: 60px 0;
+}
+.faq .title {
+  margin-bottom: 60px;
+  color: #555;
+  font-size: 30px;
+}
+.faq .card {
+  border: 1px solid #e1e1e1;
+  border-radius: 0;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.faq .card-header {
+  background-color: #fff;
+  border: 0;
+  padding: 0;
+}
+
+.faq .card-header a {
+  font-size: 18px;
+  color: #555;
+  text-align: right;
+  padding: 0;
+  position: relative;
+  display: block;
+}
+.faq .card-header a:hover,
+.faq .card-header a:focus {
+  text-decoration: none;
+}
+.faq .card-header a svg {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}
+.faq .card-body {
+  font-size: 15px;
+  color: #c9c9c9;
+  padding: 0;
+  padding-top: 20px;
+}
+
+/***************************************************
+************************************************
+****************************************************
+video
+***************************************************
+************************************************
+****************************************************/
+
+section.video {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+section.video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+section.video .overlay {
+  background-color: rgba(106, 48, 147, 0.7);
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+section.video button {
+  outline: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  font-size: 30px !important;
+  color: #fff;
+  border: 0;
+  transform: translate(50%, -50%);
+  background: transparent;
+}
+section.video button div {
+  display: flex !important;
+  direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90px !important;
+  height: 90px;
+  margin: auto;
+  border: 2px solid #f7f7f7;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+section.video button svg {
+  font-size: 40px !important;
+}
+/***************************************************
+************************************************
+****************************************************
+Bestseller Contact us
+***************************************************
+************************************************
+****************************************************/
+
+section.BC {
+  background-color: #131313;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+section.BC .title h2 {
+  font-size: 18px;
+  color: #758594;
+  padding-bottom: 20px;
+}
+section.BC form .form-group {
+  margin-bottom: 10px;
+}
+section.BC form input,
+section.BC form textarea,
+section.BC form input:focus,
+section.BC form textarea:focus {
+  padding: 20px;
+  color: #aeadad;
+  font-size: 18px;
+  background-color: #242424;
+  border: 0;
+  border-radius: 3px;
+}
+section.BC form button,
+section.BC form button:focus,
+section.BC form button:hover {
+  background-color: #a044ff;
+  border-radius: 3px;
+  color: #fff;
+  padding: 10px 20px;
+}
+section.BC .contact-us form .form-group .error {
+  color: red;
+}
+section.BC .media img {
+  margin-left: 25px;
+  margin-right: 0 !important;
+}
+section.BC .media h5 {
+  color: #aeadad;
+  font-size: 18px;
+}
+section.BC .media p {
+  color: #737373;
+  font-size: 15px;
+}
+footer {
+  background-color: #1d1d1d;
+  text-align: right;
+  line-height: 80px;
+}
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  margin-left: 10px;
+  margin-right: 0 !important;
+}
+footer ul li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  text-align: center;
+  background-color: #718292;
+  border-radius: 50%;
+}
+footer ul li a svg {
+  color: #1d1d1d;
+}
+footer ul li a:hover {
+  background-color: #bd081c;
+}
+footer .copyright {
+  text-align: left;
+  font-size: 15px;
+  color: #919191;
+}
+@media (max-width: 1048px) {
+  header {
+    overflow-x: hidden;
+  }
+
+  .product-img img:first-of-type {
+    width: 120%;
+  }
+
+  .buttons {
+    margin-bottom: 50px;
+  }
+
+  .Features .card .img-wrapper {
+    margin: 0 2rem !important;
+  }
+  .plan {
+    margin-bottom: 10px;
+  }
+}
